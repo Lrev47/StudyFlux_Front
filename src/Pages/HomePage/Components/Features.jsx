@@ -1,5 +1,5 @@
-import React from 'react';
-import "../Style/Features.css"
+import React from "react";
+import "../Style/Features.css";
 
 function FeaturesSection() {
   return (
@@ -14,8 +14,8 @@ function FeaturesSection() {
           <div className="feature-card feature-card--purple">
             <h3>Flashcards</h3>
             <p>
-              AI-generated flashcards to help you learn and memorize 
-              any topic more efficiently.
+              AI-generated flashcards to help you learn and memorize any topic
+              more efficiently.
             </p>
           </div>
 
@@ -23,8 +23,8 @@ function FeaturesSection() {
           <div className="feature-card feature-card--lavender">
             <h3>Study Guides</h3>
             <p>
-              Organized, AI-crafted outlines for every subject 
-              to keep you on track.
+              Organized, AI-crafted outlines for every subject to keep you on
+              track.
             </p>
           </div>
 
@@ -32,8 +32,17 @@ function FeaturesSection() {
           <div className="feature-card feature-card--yellow">
             <h3>Practice Tests</h3>
             <p>
-              Test your knowledge with realistic practice exams 
-              and quiz yourself any time.
+              Test your knowledge with realistic practice exams and quiz
+              yourself any time.
+            </p>
+          </div>
+
+          {/* NEW Feature 4: ATS‑Optimized Resumes */}
+          <div className="feature-card feature-card--blue">
+            <h3>ATS‑Optimized Resumes</h3>
+            <p>
+              Tailor your resume to any job description with AI and stand out in
+              ATS scans.
             </p>
           </div>
         </div>
