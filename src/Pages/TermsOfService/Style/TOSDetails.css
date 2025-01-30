@@ -1,0 +1,38 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: TOSDetails.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.tos-details-container {
+    text-align: left;
+  }
+  
+  .tos-details-title {
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .tos-details-subtitle {
+    font-size: 1.125rem;
+    color: var(--heading-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tos-details-paragraph {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .tos-details-footer {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    font-style: italic;
+  }
+  
