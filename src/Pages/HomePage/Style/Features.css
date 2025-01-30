@@ -51,22 +51,28 @@
     color: #3F3D56; /* Dark text for better contrast on yellow */
   }
   
+  /* Variation 4: Blue background (NEW) */
+  .feature-card--blue {
+    background-color: #ADD8E6; /* You can pick a different blue if you like */
+    color: #333; /* Dark text for contrast on light blue */
+  }
+  
   /* Headings within cards */
   .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
     color: #fff; /* By default, set to white; 
-                   you can override if needed (like the yellow card) */
+                   override in specialized cards if needed */
   }
   
   /* Paragraphs within cards */
   .feature-card p {
     margin: 0;
     line-height: 1.4;
-    color: #fff; /* Same note about overriding on the yellow card */
+    color: #fff; /* Same note about overriding on special backgrounds */
   }
   
-  /* If you want to fine-tune the color for the yellow card’s text: */
+  /* Overriding colors specifically for the yellow card */
   .feature-card--yellow h3,
   .feature-card--yellow p {
     color: #3F3D56; 
