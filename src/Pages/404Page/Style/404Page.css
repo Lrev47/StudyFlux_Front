@@ -1,0 +1,32 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: 404Page.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Overall section styling */
+.not-found-section {
+    padding: 3rem 1rem;
+    background-color: var(--background-color);
+    min-height: calc(100vh - 120px); /* Adjust if your header/footer has fixed height */
+  }
+  
+  /* Container styling */
+  .not-found-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* A wrapper box if you want a card-style layout */
+  .not-found-box {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
