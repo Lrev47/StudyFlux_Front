@@ -1,44 +1,57 @@
 .hero {
-  height: 30rem;
-    padding: 2rem;
-    text-align: center;
-    background: #fff; /* or a light lavender background from your global theme */
-  }
-  
-  .hero-heading {
-    font-size: 2rem;
-    color: var(--heading-color);
-    margin: 1rem 0;
-    line-height: 1.2;
-  }
-  
-  /* Style your two emphasis words differently */
-  .keyword-study {
-    color: #8A75FF;     /* Lavender/purple accent */
-    font-weight: 700;   /* Bold or extra bold for impact */
-  }
-  
-  .keyword-succeed {
-    color: #FFC436;     /* A warm golden/yellow accent */
-    font-weight: 700;
-  }
-  
-  .hero-subtext {
-    font-size: 1rem;
-    color: var(--text-color);
-    margin-bottom: 2rem;
-  }
-  
-  .hero-cta {
-    padding: 0.75rem 2rem;
-    background-color: var(--accent-color);
-    color: var(--foreground-color);
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  .hero-cta:hover {
-    background-color: var(--link-hover-color);
-  }
-  
+  /* Let the hero fill the screen so we have real scrolling space */
+  height: 80vh;
+  position: relative;
+  background: #fff; /* White background => text uses var(--heading-color) from global. */
+  overflow: hidden; 
+  /* So parallax images (blobs) remain contained or do not cause overflow */
+}
+
+/* Hero text overlay container */
+.hero-overlay-content {
+  position: relative;
+  z-index: 2;   /* above the .blob which is z-index:1 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  color: var(--heading-color); /* #2E2C4F from global.css */
+  margin: 1rem 0;
+  line-height: 1.2;
+  /* z-index: 50 not strictly needed since the parent has z-index:2. 
+     But doesn't hurt to keep. */
+}
+
+.keyword-study {
+  color: #8A75FF;
+  font-weight: 700;
+}
+
+.keyword-succeed {
+  color: #FFC436;
+  font-weight: 700;
+}
+
+.hero-subtext {
+  font-size: 0.9rem;
+  color: var(--text-color); /* #3F3D56 from global, for body text */
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent-color);
+  color: var(--foreground-color);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  background-color: var(--link-hover-color);
+}
