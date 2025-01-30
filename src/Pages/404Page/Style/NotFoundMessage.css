@@ -1,0 +1,33 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: NotFoundMessage.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Container for the main 404 message */
+.not-found-message-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Large 404 number */
+  .not-found-title {
+    font-size: 5rem;
+    margin: 0;
+    color: var(--accent-color);
+  }
+  
+  /* Subtitle text */
+  .not-found-subtitle {
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+    color: var(--heading-color);
+  }
+  
+  /* Description text */
+  .not-found-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0;
+  }
+  
