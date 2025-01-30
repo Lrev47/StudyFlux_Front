@@ -3,6 +3,7 @@ import Hero from './Components/Hero.jsx';
 import FeaturesSection from './Components/Features.jsx';
 import TestimonialsSection from './Components/Testimonials.jsx';
 import StudyTipsSection from './Components/StudyTips.jsx';
+import CallToAction from './Components/CallToAction.jsx';
 import "./Style/HomePage.css"
 
 function Homepage() {
@@ -12,6 +13,7 @@ function Homepage() {
       <FeaturesSection />
       <TestimonialsSection />
       <StudyTipsSection />
+      <CallToAction/>
 
     </>
   );
