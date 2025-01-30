@@ -1,0 +1,38 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~
+  FILE: Analytics.css
+  ~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.analytics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .analytics-title {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--heading-color);
+  }
+  
+  .analytics-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  .analytics-time {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+  
+  .analytics-note {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  
