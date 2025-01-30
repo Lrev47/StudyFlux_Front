@@ -1,0 +1,48 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: NotFoundSuggestions.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.not-found-suggestions-container {
+    text-align: center;
+  }
+  
+  .suggestions-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+  }
+  
+  /* List of helpful links */
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  
+  .suggestions-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Optional styling for links */
+  .suggestions-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .suggestions-list a:hover,
+  .suggestions-list a:focus {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+  }
+  
+  /* Note or footnote */
+  .suggestions-note {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
