@@ -1,0 +1,56 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: ContactUs.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Section layout */
+.contact-us-section {
+    padding: 3rem 1rem;
+    background-color: var(--background-color);
+  }
+  
+  .contact-us-container {
+    text-align: center;
+  }
+  
+  /* Heading */
+  .contact-us-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+  }
+  
+  /* Subheading */
+  .contact-us-subheading {
+    font-size: 1.125rem;
+    margin: 0 auto 2rem;
+    max-width: 600px;
+    color: var(--text-color);
+  }
+  
+  /* Grid for form & info */
+  .contact-us-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  
+  /* For larger screens, side by side columns */
+  @media (min-width: 768px) {
+    .contact-us-grid {
+      grid-template-columns: 2fr 1fr;
+      align-items: start;
+    }
+  }
+  
+  /* Card-like wrapper for the sub-components 
+     so they match your overall design. */
+  .contact-us-box {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: left; /* Let child elements handle alignment, especially forms. */
+  }
+  
