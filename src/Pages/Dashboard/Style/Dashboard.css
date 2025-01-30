@@ -1,0 +1,56 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~
+  FILE: Dashboard.css
+  ~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Main section styling */
+.dashboard-section {
+    padding: 3rem 1rem;
+    background-color: var(--background-color);
+  }
+  
+  .dashboard-container {
+    text-align: center;
+  }
+  
+  /* Page heading */
+  .dashboard-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+  }
+  
+  /* Subheading */
+  .dashboard-subheading {
+    font-size: 1.125rem;
+    color: var(--text-color);
+    margin: 0 auto 2rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Grid for the card components */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left; /* Let the inner .dashboard-card have their own alignment */
+  }
+  
+  /* For larger screens, arrange them in multiple columns */
+  @media (min-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  /* Common card styling, if you want consistent backgrounds & borders. 
+     Each sub-component can wrap its content in a "dashboard-card" class if desired. */
+  .dashboard-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+  }
+  
