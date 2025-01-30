@@ -1,8 +1,9 @@
 import React from 'react';
-import Hero from '../../components/hero/hero';
-import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
-import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
-import StudyTipsSection from '../../components/StudyTipsSection/StudyTipsSection';
+import Hero from './Components/Hero.jsx';
+import FeaturesSection from './Components/Features.jsx';
+import TestimonialsSection from './Components/Testimonials.jsx';
+import StudyTipsSection from './Components/StudyTips.jsx';
+import "./Style/HomePage.css"
 
 function Homepage() {
   return (
@@ -11,7 +12,7 @@ function Homepage() {
       <FeaturesSection />
       <TestimonialsSection />
       <StudyTipsSection />
-      {/* Other sections if needed */}
+
     </>
   );
 }

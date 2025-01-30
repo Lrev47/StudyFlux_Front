@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import AppRouter from './router/AppRouter.jsx';
+import AppRouter from './router/AppRouter';
 
 function App() {
   // Just return your router (or any top-level layout)

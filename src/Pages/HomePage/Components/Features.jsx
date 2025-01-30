@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../Style/Features.css"
 
 function FeaturesSection() {
   return (

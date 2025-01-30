@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Style/StudyTips.css"
 
 function StudyTipsSection() {
   // For a real app, you might fetch or import these tips from a database or CMS
