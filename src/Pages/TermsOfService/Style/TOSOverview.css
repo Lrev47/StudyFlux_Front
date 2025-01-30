@@ -1,0 +1,24 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: TOSOverview.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.tos-overview-container {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .tos-overview-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+  }
+  
+  .tos-overview-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
