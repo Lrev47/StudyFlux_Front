@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css'
+// src/Components/Header/Header.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
   return (
@@ -10,12 +11,23 @@ function Header() {
           <Link to="/">Homepage</Link>
         </li>
         <li>
-          <Link to="/cards">Flashcard List</Link>
+          <Link to="/login">Log In</Link>
         </li>
         <li>
-          <Link to="/topics">Topic Page</Link>
+          <Link to="/signup">Sign Up</Link>
         </li>
-        {/* Add more links here as you add more routes */}
+        <li>
+          <Link to="/tiers">Tiers</Link>
+        </li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact Us</Link>
+        </li>
+        <li>
+          <Link to="/terms">Terms of Service</Link>
+        </li>
       </ul>
     </nav>
   );
