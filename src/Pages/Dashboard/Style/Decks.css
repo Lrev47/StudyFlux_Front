@@ -1,0 +1,46 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~
+  FILE: Decks.css
+  ~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.decks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .decks-title {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--heading-color);
+  }
+  
+  .decks-count {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0 0 1rem;
+  }
+  
+  .decks-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  /* Buttons can rely on global styling if you want,
+     but here's some specificity for example: */
+  .decks-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .decks-button:hover,
+  .decks-button:focus {
+    background-color: var(--link-hover-color);
+    color: var(--foreground-color);
+  }
+  
