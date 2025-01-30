@@ -1,0 +1,68 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: PremiumTier.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.premium-tier-card {
+    background-color: #8A75FF; /* Purple background */
+    border: 1px solid #8A75FF; /* Matching border or a lighter shade if you prefer */
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .premium-tier-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Sub-elements */
+  .premium-tier-card .tier-card__title {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    color: #fff;
+  }
+  
+  .premium-tier-card .tier-card__price {
+    font-size: 1.25rem;
+    margin: 0 0 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .premium-tier-card .tier-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .premium-tier-card .tier-card__features li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .premium-tier-card .tier-card__button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: var(--button-bg); /* You can set to #fff if you want a white button */
+    color: var(--foreground-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
+  }
+  
+  .premium-tier-card .tier-card__button:hover,
+  .premium-tier-card .tier-card__button:focus {
+    background-color: var(--link-hover-color);
+    color: var(--foreground-color);
+  }
+  

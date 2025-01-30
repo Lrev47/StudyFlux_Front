@@ -1,0 +1,74 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+  FILE: FreeTier.css
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.free-tier-card {
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .free-tier-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* We can reuse the same class names for sub-elements 
+     so that the look is consistent across tiers: */
+  
+  /* Tier title */
+  .free-tier-card .tier-card__title {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    color: var(--heading-color);
+  }
+  
+  /* Price text */
+  .free-tier-card .tier-card__price {
+    font-size: 1.25rem;
+    margin: 0 0 1rem;
+    color: var(--accent-color);
+    font-weight: 700;
+  }
+  
+  /* Feature list */
+  .free-tier-card .tier-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+    color: var(--text-color);
+  }
+  
+  .free-tier-card .tier-card__features li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Button */
+  .free-tier-card .tier-card__button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: var(--button-bg);
+    color: var(--foreground-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
+  }
+  
+  .free-tier-card .tier-card__button:hover,
+  .free-tier-card .tier-card__button:focus {
+    background-color: var(--link-hover-color);
+    color: var(--foreground-color);
+  }
+  

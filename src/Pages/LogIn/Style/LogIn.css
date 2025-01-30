@@ -1,0 +1,86 @@
+/* 
+  ~~~~~~~~~~~~~~~~~~~~~
+  FILE: src/Pages/Login/Login.css
+  ~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Container for the entire login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 80px); /* Adjust if your header/footer takes up some space */
+  }
+  
+  /* Card styling (you already have a .card class in global, so we can rely on that) */
+  .login-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .login-heading {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: var(--heading-color);
+  }
+  
+  /* Error message */
+  .login-error {
+    background-color: #ffdddd;
+    color: #d8000c;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Form styles */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Label and input grouping */
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+  
+  /* Button style can rely on the global button if you like. 
+     We add a bit more specificity here: */
+  .login-button {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--foreground-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .login-button:hover,
+  .login-button:focus {
+    background-color: var(--link-hover-color);
+  }
+  

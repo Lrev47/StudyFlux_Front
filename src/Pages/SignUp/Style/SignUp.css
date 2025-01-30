@@ -1,0 +1,85 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~
+  FILE: src/Pages/SignUp/SignUp.css
+  ~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Container for the entire sign-up page */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 80px); /* Adjust if your header/footer takes up some space */
+  }
+  
+  /* Card styling (we reuse .card class from global if you like) */
+  .signup-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .signup-heading {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: var(--heading-color);
+  }
+  
+  /* Error message */
+  .signup-error {
+    background-color: #ffdddd;
+    color: #d8000c;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Form styles */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Label and input grouping */
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .signup-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+  
+  /* Button style can rely on the global button if you want to be consistent */
+  .signup-button {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--foreground-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .signup-button:hover,
+  .signup-button:focus {
+    background-color: var(--link-hover-color);
+  }
+  

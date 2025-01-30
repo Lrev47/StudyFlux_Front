@@ -1,0 +1,40 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~
+  FILE: TierPage.css
+  ~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* Overall section for the tiers */
+.tier-section {
+    padding: 3rem 1rem;
+    background-color: var(--background-color);
+  }
+  
+  /* Container styling (you have .container in global.css, so this may be minimal) */
+  .tier-container {
+    text-align: center;
+  }
+  
+  /* Page heading */
+  .tier-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+  }
+  
+  /* Subheading text */
+  .tier-subheading {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+  
+  /* Grid for the tier cards */
+  .tier-cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: start;
+  }
+  
