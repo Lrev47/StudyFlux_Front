@@ -1,7 +1,14 @@
 import React from 'react';
 import '../Style/CallToAction.css';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function CallToAction() {
+
+  const navigate = useNavigate()
+
+  
   return (
     <section className="cta-section">
       <div className="cta-container">
@@ -12,7 +19,7 @@ function CallToAction() {
           Join thousands of learners using our AI-powered flashcards, 
           guides, and practice tests!
         </p>
-        <button className="cta-button">
+        <button onClick={() => navigate("/signup")} className="cta-button">
           Sign Up Now
         </button>
       </div>

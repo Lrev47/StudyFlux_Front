@@ -1,80 +1,95 @@
-/* ~~~~~~~~~~~~~~~~~~~~~
-   FILE: src/styles/FeaturesSection.css
-   ~~~~~~~~~~~~~~~~~~~~~ */
+.features-section {
+  padding: 1rem 1rem;
+  background-color: var(--background-color); /* or #fff */
+}
 
-   .features-section {
-    padding: 3rem 1rem;
-    background-color: var(--background-color); /* or #fff if you prefer */
-  }
-  
-  /* Heading */
-  .features-heading {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--heading-color);
-  }
-  
-  .keyword-interactive {
-    color: var(--accent-color); /* your lavender‐purple from global.css */
-    font-weight: 700;
-  }
-  
-  /* Grid Layout */
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  /* Each Feature Card */
-  .feature-card {
-    padding: 2rem;
-    border-radius: 12px;
-    color: var(--foreground-color); /* We'll override this for certain backgrounds */
-    text-align: center;
-  }
-  
-  /* Variation 1: Purple background */
-  .feature-card--purple {
-    background-color: #8A75FF; 
-  }
-  
-  /* Variation 2: Lighter lavender background */
-  .feature-card--lavender {
-    background-color: #C2ACFF;
-  }
-  
-  /* Variation 3: Yellow background */
-  .feature-card--yellow {
-    background-color: #FFC436;
-    color: #3F3D56; /* Dark text for better contrast on yellow */
-  }
-  
-  /* Variation 4: Blue background (NEW) */
-  .feature-card--blue {
-    background-color: #ADD8E6; /* You can pick a different blue if you like */
-    color: #333; /* Dark text for contrast on light blue */
-  }
-  
-  /* Headings within cards */
-  .feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #fff; /* By default, set to white; 
-                   override in specialized cards if needed */
-  }
-  
-  /* Paragraphs within cards */
-  .feature-card p {
-    margin: 0;
-    line-height: 1.4;
-    color: #fff; /* Same note about overriding on special backgrounds */
-  }
-  
-  /* Overriding colors specifically for the yellow card */
-  .feature-card--yellow h3,
-  .feature-card--yellow p {
-    color: #3F3D56; 
-  }
-  
+/* Heading */
+.features-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.keyword-interactive {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* Responsive Grid */
+.features-grid {
+  display: grid;
+  gap: 1.5rem;
+  /* 
+    Each card is minimum 250px wide, up to 1 fraction of remaining space.
+    This ensures they don't overflow or create a scrollbar.
+  */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Each Feature Card */
+.feature-card {
+  padding: 2rem;
+  border-radius: 12px;
+  color: var(--foreground-color);
+  text-align: center;
+
+  /* Makes cards taller if needed */
+  min-height: 300px;
+
+  /* Flex layout to nicely center items & control spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem; 
+}
+
+/* Simple styling for the icon */
+.feature-icon {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Variation 1: Purple background */
+.feature-card--purple {
+  background-color: #8A75FF; 
+}
+
+/* Variation 2: Lighter lavender background */
+.feature-card--lavender {
+  background-color: #C2ACFF;
+}
+
+/* Variation 3: Yellow background */
+.feature-card--yellow {
+  background-color: #FFC436;
+  color: #3F3D56; /* Dark text for better contrast on yellow */
+}
+
+/* Variation 4: Blue background */
+.feature-card--blue {
+  background-color: #ADD8E6;
+  color: #333; /* Dark text for better contrast */
+}
+
+/* Headings within cards */
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: #fff; /* Overridden for yellow card below */
+}
+
+/* Paragraphs within cards */
+.feature-card p {
+  margin: 0;
+  line-height: 1.4;
+  color: #fff; /* Overridden for yellow card below */
+}
+
+/* Overriding text colors specifically for the yellow card */
+.feature-card--yellow h3,
+.feature-card--yellow p {
+  color: #3F3D56;
+}

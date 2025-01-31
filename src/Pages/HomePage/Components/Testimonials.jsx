@@ -21,7 +21,7 @@ function TestimonialsSection() {
           {/* Testimonial 1 */}
           <div className="testimonial-card">
             <img 
-              src="https://via.placeholder.com/150"
+              src="public/Alex Johnson.png"
               alt="User 1"
               className="testimonial-card__photo"
             />
@@ -35,7 +35,7 @@ function TestimonialsSection() {
           {/* Testimonial 2 */}
           <div className="testimonial-card">
             <img 
-              src="https://via.placeholder.com/150"
+              src="public/Taylor Kim.png"
               alt="User 2"
               className="testimonial-card__photo"
             />
@@ -48,7 +48,7 @@ function TestimonialsSection() {
           {/* Testimonial 3 */}
           <div className="testimonial-card">
             <img 
-              src="https://via.placeholder.com/150"
+              src="public/Morgan Lee.png"
               alt="User 3"
               className="testimonial-card__photo"
             />
@@ -61,7 +61,7 @@ function TestimonialsSection() {
           {/* Testimonial 4 (optional) */}
           <div className="testimonial-card">
             <img 
-              src="https://via.placeholder.com/150"
+              src="public/Jordan Smith.png"
               alt="User 4"
               className="testimonial-card__photo"
             />

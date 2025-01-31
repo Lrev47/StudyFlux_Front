@@ -1,48 +1,63 @@
-/* ~~~~~~~~~~~~~~~~~~~~~
-   FILE: CallToAction.css
-   ~~~~~~~~~~~~~~~~~~~~~ */
+.cta-section {
+  /* Keep the height at 80vh */
+  height: 80vh;
 
-   .cta-section {
-    background-color: var(--accent-color);
-    color: var(--foreground-color);
-    text-align: center;
-    padding: 3rem 1rem;
-    margin-top: 2rem; /* optional, gives a gap from previous sections */
-  }
-  
-  .cta-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .cta-heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-  }
-  
-  .cta-subtext {
-    font-size: 1.125rem; /* ~18px */
-    margin-bottom: 2rem;
-    color: var(--foreground-color);
-  }
-  
-  /* CTA button */
-  .cta-button {
-    background-color: var(--button-bg);  /* typically same as var(--accent-color) */
-    color: var(--button-text);
-    border: 1px solid var(--border-color);
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .cta-button:hover,
-  .cta-button:focus {
-    background-color: var(--link-hover-color);
-    color: var(--foreground-color);
-    border-color: var(--link-hover-color);
-  }
-  
+  /* Background, text align, etc. */
+  background-color: var(--accent-color);
+  color: var(--foreground-color);
+
+  /* 
+    1. Use flex to center content vertically & horizontally
+    2. The padding and margin-top are optional. 
+       Feel free to adjust or remove if it affects centering.
+  */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+
+  /* If you want some space above from the previous section, keep margin-top.
+     Otherwise, remove it if you want everything truly centered in the viewport. */
+  margin-top: 2rem; 
+
+  /* If you want absolutely no 'inset' space inside the section, remove the padding.
+     Otherwise, keep it minimal. */
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  /* 2. Increase the heading size */
+  font-size: 3rem; 
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.cta-subtext {
+  font-size: 1.125rem; /* ~18px */
+  margin-bottom: 2rem;
+  color: var(--foreground-color);
+}
+
+/* CTA button */
+.cta-button {
+  background-color: var(--button-bg); /* typically same as var(--accent-color) */
+  color: var(--button-text);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: red;
+  color: var(--foreground-color);
+  border-color: var(--link-hover-color);
+}
